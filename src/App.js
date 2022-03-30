@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Header from './components/Header/Header';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+// import Footer from './components/Footer/Footer';
+import Home from './components/Pages/Home/Home';
+import Quiz from './components/Pages/Quiz/Quiz';
+import { useState } from 'react';
 function App() {
+  const[name,setName]=useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className="app" > 
+<Header/>
+
+<Routes>
+<Route path="/" element={<Home name={name} setName={setName}/>}> 
+ </Route>
+ <Route path="/quiz" element={<Quiz/>}> 
+ </Route>
+
+</Routes>
+
     </div>
+   
+    </BrowserRouter>
   );
 }
 
