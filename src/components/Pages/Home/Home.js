@@ -22,17 +22,20 @@ const Home = () => {
   return (
     <div className="content">
       <div className="settings">
-        <span style={{ fontSize: 30 }}> Quiz</span>
+        <span style={{ fontSize: 30 }}> </span>
         <div className="settings__select">
 { error && <Error> please Enter your name</Error>}
            {/* TextField takes here few props like label, variant  */}
+         
           <TextField
-            style={{ marginBottom: 25 }}
+            style={{ marginBottom: 45}}
+            InputProps={{ style: { fontSize: 25 } }}
+            InputLabelProps={{ style: { fontSize: 25 } }}
             label="Enter your name"
             variant="outlined"
             onChange={(e)=>setName(e.target.value)}
           ></TextField>
-          <Button variant="contained" color="primary" size="large" onClick={handleSubmit}>  
+          <Button variant="contained" color="primary"  onClick={handleSubmit}>  
               Start Quiz
           </Button>
         </div>

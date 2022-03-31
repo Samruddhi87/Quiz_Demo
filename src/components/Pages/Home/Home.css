@@ -43,3 +43,10 @@
     flex: 0.8;
     justify-content: space-evenly;
   }
+  .settings__select button{
+    width: 30%;
+    padding: 20PX;
+   margin-left: 30%;
+   font-size: large;
+
+  }

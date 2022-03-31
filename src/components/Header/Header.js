@@ -1,10 +1,13 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import './Header.css'
+// import {motion} from "framer-motion"; 
 const Header = () => {
   return (
     <div className='header'>
-        <Link to="/" className='title'>Quiz Hub</Link>
+    
+        <Link to="/" className='title'>
+        Quiz Hub   </Link>
    <hr className=' divider'/>
     </div>
   )

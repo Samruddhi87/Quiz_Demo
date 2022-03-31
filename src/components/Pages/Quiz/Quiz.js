@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Quiz.css";
 
 // import Home from "../Home/Home";
-export default function Quiz() {
+export default function Quiz(props) {
  
 // const[name]=useState();
 // console.log(name);
@@ -86,7 +86,7 @@ export default function Quiz() {
   };
   return (
     <div className="quiz" >
-    <span className="subtitle">Welcome   </span>
+    <span className="subtitle">Welcome  </span>
   
     
     <div className="app">
@@ -117,7 +117,7 @@ export default function Quiz() {
           </div>
         </>
       )}
-      <h2 style={{marginTop:"18.9%",textAlign:"center"}}>  Made with ❤  </h2>
+      
     </div>
   
     </div>
